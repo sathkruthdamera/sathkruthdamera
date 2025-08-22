@@ -75,18 +75,3 @@
 
 ---
 
-## 📈 GitHub Stats
-> These cards are generated services; if they rate-limit, they may load slowly.
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sathkruthdamera&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sathkruthdamera&layout=compact&theme=radical)
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=sathkruthdamera&theme=radical)
-
-<!--
-Tip: Keep assets here in this repo:
-- assets/banner.gif  (animated fallback used in README)
-- assets/banner.png  (static backup image)
-
-The interactive version of the banner lives at:
-- animated-banner/index.html  (served via GitHub Pages)
--->
