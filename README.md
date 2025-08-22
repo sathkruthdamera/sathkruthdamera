@@ -2,6 +2,7 @@
   <img src="assets/banner.gif" alt="Satya Mani Sathkruth Damera — Animated Terminal + Matrix Banner" width="100%"/>
 </a>
 
+
 # Hey there, I'm **Satya Mani Sathkruth Damera** 👋
 
 *Data Engineer · Builder of Data Pipelines · Microservices Tinkerer*
