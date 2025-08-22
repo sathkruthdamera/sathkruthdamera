@@ -1,4 +1,3 @@
-<!-- Clickable GIF banner that links to the full animation on GitHub Pages -->
 <a href="https://sathkruthdamera.github.io/sathkruthdamera/animated-banner/">
   <img src="assets/banner.gif" alt="Satya Mani Sathkruth Damera — Animated Terminal Banner" width="100%"/>
 </a>
@@ -64,14 +63,14 @@
 ---
 
 ## 🎓 Education & Certifications
-- **M.S., Computer Science** — Wichita State University  
+- **M.S., Computer Science** - Wichita State University  
 - Oracle Cloud Platform Application Integration Specialist  
 - AI Foundations (Udacity) · Cloud Computing (NPTEL)
 
 ---
 
 ## 🌱 One-liner
-> “Data doesn’t lie—sometimes it just trolls you. Double‑check.”
+> “Data doesn’t lie but sometimes it just trolls you. Double‑check.”
 
 ---
 
