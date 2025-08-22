@@ -1,5 +1,6 @@
+<!-- Clickable GIF banner that links to the full interactive animation (terminal + red matrix background) hosted on GitHub Pages -->
 <a href="https://sathkruthdamera.github.io/sathkruthdamera/animated-banner/">
-  <img src="assets/banner.gif" alt="Satya Mani Sathkruth Damera — Animated Terminal Banner" width="100%"/>
+  <img src="assets/banner.gif" alt="Satya Mani Sathkruth Damera — Animated Terminal + Matrix Banner" width="100%"/>
 </a>
 
 # Hey there, I'm **Satya Mani Sathkruth Damera** 👋
