@@ -25,7 +25,7 @@
                   radial-gradient(1000px 800px at 75% 80%, rgba(187,154,247,.10), transparent 65%); }
     .final-message-container.visible{opacity:1;pointer-events:auto}
     .final-message{text-align:center;font-size:calc(3.5vmin + 1rem);font-weight:bold;color:var(--text-color);transform:translateY(20px);opacity:0;
-      animation:fadeIn 1.5s ease-out forwards;animation-delay:.5s;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+      animation:fadeIn 1.5s ease-out forwards;animation-delay:.5s;text-shadow: 0 0 8px rgba(187,154,247,0.5), 0 0 20px rgba(125,207,255,0.5), 0 2px 10px rgba(0,0,0,.4);}
     .subtitle{margin-top:.6rem;font-weight:500;font-size:calc(1.4vmin + .6rem);color:#9aa5ce;opacity:0;animation:fadeIn 1.5s ease-out forwards;animation-delay:1.2s}
     .links{margin-top:.4rem;font-weight:600;font-size:calc(1.2vmin + .5rem);opacity:0;animation:fadeIn 1.5s ease-out forwards;animation-delay:1.6s}
     .links a{margin:0 .35rem;text-decoration:none}.links a.l1{color:#7dcfff}.links a.l2{color:#bb9af7}.links a.l3{color:#9ece6a}
@@ -45,7 +45,7 @@
         <div id="final-message-container" class="final-message-container">
           <div class="final-message">
             Satya Mani Sathkruth Damera
-            <div class="subtitle">Data Engineer • Spring Boot • Angular • Spark • AWS • Docker</div>
+            <div class="subtitle">Data Engineer • Builder of Things • Lifelong Learner</div>
             <div class="links">
               <a class="l1" href="mailto:damerasathkruth@gmail.com">📧 Email</a> ·
               <a class="l2" href="https://www.linkedin.com/in/damera-satya-mani-sathkruth-ba9083155/">💼 LinkedIn</a> ·
@@ -72,6 +72,9 @@
     const positions = new Float32Array(TOTAL_PARTICLES * 3);
     const colors = new Float32Array(TOTAL_PARTICLES * 3);
     const velocities = new Float32Array(TOTAL_PARTICLES);
+    const turbulence = new Float32Array(TOTAL_PARTICLES);
+
+    const colorPalette = [ new THREE.Color("#7dcfff"), new THREE.Color("#bb9af7"), new THREE.Color("#9ece6a"), new THREE.Color("#e0af68"), new THREE.Color("#f7768e") ];
 
     function init() {
       scene = new THREE.Scene(); scene.background = new THREE.Color(0x000000);
@@ -89,17 +92,23 @@
         const z = THREE.MathUtils.randFloatSpread(WORLD_DEPTH);
         const startY = THREE.MathUtils.randFloat(WORLD_HEIGHT/2, WORLD_HEIGHT*2);
         const speed = THREE.MathUtils.randFloat(0.4, 1.0);
+        const baseColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+
         for (let p = 0; p < PARTICLES_PER_STREAM; p++) {
           positions[i*3] = x; positions[i*3+1] = startY - p*PARTICLE_SPACING; positions[i*3+2] = z;
           velocities[i] = speed;
-          const intensity = p===0 ? 1.0 : Math.max(0.05, 1.0 - p*0.1);
-          colors[i*3] = intensity; colors[i*3+1] = 0.0; colors[i*3+2] = 0.0;
+          turbulence[i] = Math.random() * 0.2 - 0.1;
+
+          const intensity = p === 0 ? 1.0 : Math.max(0.1, 1.0 - p * 0.08);
+          const finalColor = baseColor.clone().multiplyScalar(intensity);
+          colors[i*3] = finalColor.r; colors[i*3+1] = finalColor.g; colors[i*3+2] = finalColor.b;
           i++;
         }
       }
       geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
       geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
       geometry.setAttribute('velocity', new THREE.BufferAttribute(velocities, 1));
+      geometry.setAttribute('turbulence', new THREE.BufferAttribute(turbulence, 1));
       const material = new THREE.PointsMaterial({ size: 0.3, vertexColors: true, blending: THREE.AdditiveBlending, depthTest: false, transparent: true, opacity: 0.9 });
       points = new THREE.Points(geometry, material);
       scene.add(points);
@@ -108,10 +117,18 @@
     function onWindowResize(){ camera.aspect = window.innerWidth/window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); }
     function animate(){
       requestAnimationFrame(animate);
-      const posAttr = geometry.getAttribute('position'); const velAttr = geometry.getAttribute('velocity');
+      const posAttr = geometry.getAttribute('position');
+      const velAttr = geometry.getAttribute('velocity');
+      const turbAttr = geometry.getAttribute('turbulence');
+      const time = Date.now() * 0.001;
+
       for (let i = 0; i < TOTAL_PARTICLES; i++) {
+        posAttr.array[i*3] += turbAttr.array[i] * Math.sin(time + posAttr.array[i*3+1] * 0.1);
         posAttr.array[i*3+1] -= velAttr.array[i];
-        if (posAttr.array[i*3+1] < -WORLD_HEIGHT/2) posAttr.array[i*3+1] += WORLD_HEIGHT*2;
+        if (posAttr.array[i*3+1] < -WORLD_HEIGHT/2) {
+            posAttr.array[i*3+1] += WORLD_HEIGHT*2;
+            posAttr.array[i*3] = THREE.MathUtils.randFloatSpread(WORLD_WIDTH); // Reset X on loop
+        }
       }
       posAttr.needsUpdate = true; controls.update(); renderer.render(scene, camera);
     }
