@@ -3,75 +3,125 @@
 </a>
 
 
-# Hey there, I'm **Satya Mani Sathkruth Damera** 👋
 
-*Data Engineer · Builder of Data Pipelines · Microservices Tinkerer*
 
-- **Working on**: Secure microservices + data engineering @ **Techwave** (Spring Boot, Angular, Docker, Eureka).
-- **Previously**: Data Engineering & Analytics @ **Wipro**; BI for **First Abu Dhabi Bank**.
-- **Learning**: RL for model selection, scalable AI/data pipelines, deeper cloud automation.
-- **Ask me about**: ETL/ELT, Spark, Airflow, SQL tuning, JWT auth, microservices, and shipping stable infra.
-- **Reach me**: [Email](mailto:damerasathkruth@gmail.com) · [LinkedIn](https://www.linkedin.com/in/damera-satya-mani-sathkruth-ba9083155/) · [GitHub](https://github.com/sathkruthdamera)
+<h1 align="center">Hi, I'm Satya Mani Sathkruth Damera 👋</h1>
 
----
+<p align="center">
+  <b>Data Engineer · Systems Builder · AI & Edge-Sensing Tinkerer</b><br>
+  Designing data pipelines, ETL/ELT workflows, and analytics in healthcare & finance —<br>
+  and shipping side projects across AI tooling, computer vision, edge hardware, and mobile.
+</p>
 
-## 🚀 Tech Stack
-`Python · SQL · Java · JavaScript · Spring Boot · Hibernate · Angular · Spark · Airflow · SSIS · Power BI · OBIEE · Oracle SQL · ODI · AWS · Docker · Eureka · REST APIs · JWT Auth · Microservices · Data Governance · HIPAA Compliance`
-
----
-
-## 🔧 Professional Experience
-
-**Techwave | Software Engineer Intern** *(Jun 2024 – Present)*  
-- Built secure microservices for a quiz app (Spring Boot + Docker).  
-- Implemented JWT-based authentication with RBAC.  
-- Developed Angular UIs & optimized backend queries with JPA/Hibernate.  
-- Deployed distributed services on Eureka.  
-
-**Wipro Ltd. | Associate Consultant – Data Engineering & Analytics** *(Sep 2020 – Jan 2023)*  
-- Automated ETL workflows (SSIS, ODI) with **99.9%** availability.  
-- Optimized **100+** SQL/PL/SQL procedures → **30%** faster reporting.  
-- Built Power BI & OBIEE dashboards for decisioning.  
-- Ensured compliance for HIPAA & FATCA/CRS audits.  
-
-**First Abu Dhabi Bank (via Wipro) | BI Consultant** *(Sep 2020 – Jan 2023)*  
-- Designed real-time MIS dashboards and reports.  
-- Partnered with financial stakeholders to deliver actionable insights.  
+<p align="center">
+  <a href="https://github.com/sathkruthdamera"><img src="https://img.shields.io/github/followers/sathkruthdamera?label=Follow&style=social" alt="GitHub followers"></a>
+  <img src="https://komarev.com/ghpvc/?username=sathkruthdamera&color=blue&label=Profile+views" alt="Profile views">
+</p>
 
 ---
 
-## 📚 Projects & Research
-- **ISIC 2018 – Medical Imaging** → CNN (TensorFlow) with ~**85%** accuracy for lesion classification.  
-- **Computational Linguistics & Phylogenetics** → Automated tree building in Python.  
-- **Social Dynamics Modeling** → Simulated population trait propagation.  
-- **Computer Vision & Image Processing** → Camera calibration + matrix transforms (OpenCV).  
+## 👤 Professional Summary
+
+Data Engineer with 5+ years of experience designing and operating large-scale data pipelines, ETL/ELT workflows, and analytics platforms across healthcare and financial domains. I specialize in turning messy, high-volume data into reliable, well-modeled, query-ready systems — using Apache Spark, Airflow, SQL, and cloud-native tooling on AWS. Beyond the day job, I build end-to-end side projects spanning AI developer tooling, edge/IoT sensing, computer-vision research, and mobile, where I own everything from hardware and backend to deployment and UX. I care about correctness, observability, and shipping things people actually use.
 
 ---
 
-## 🎮 Featured Repositories
-> A few playful builds & experiments. More at the **Repositories** tab.
+## These are my recent adventures lately
 
-| Repository | What it is |
-|---|---|
-| **[TAILS-OS-SIMULATOR](https://github.com/sathkruthdamera/TAILS-OS-SIMULATOR)** | A TypeScript mini‑OS sim with terminal vibes. |
-| **[The-Gourment-Place](https://github.com/sathkruthdamera/The-Gourment-Place)** | A simple restaurant/place app—TypeScript front to back. |
-| **[STOCK-PICKER](https://github.com/sathkruthdamera/STOCK-PICKER)** | Tiny utility experimenting with ticker picking logic. |
-| **[SPASHOLZ](https://github.com/sathkruthdamera/SPASHOLZ)** | Space‑themed TypeScript project because the universe deserves code. |
-| **[DUMB-OS](https://github.com/sathkruthdamera/DUMB-OS)** | A “throwaway” OS project that’s sneakily educational. |
-| **[QTICKETING](https://github.com/sathkruthdamera/QTICKETING)** | A ticketing concept app (HTX Metro vibes). |
-| **[GUI-EMULATOR](https://github.com/sathkruthdamera/GUI-EMULATOR)** | Emulates app/workspace layouts for training & experiments. |
+A focused sprint from **Feb → Jun 2026** — shipping across AI tooling, research, edge hardware, and mobile.
+
+### 🐜 [AITERMITE](https://github.com/sathkruthdamera/AITERMITE) · `Python` · *on PyPI*
+An **AI terminal copilot** for Windows, macOS, and Linux that fixes failed commands and answers plain-English questions right at your prompt.
+- **Ask mode** — type a thought with no prefix; it routes to Claude / Codex / local Ollama and offers an arrow-key menu to run suggested commands.
+- Auto-detects signed-in CLI agents (no API keys needed), redacts secrets before any provider call, and blocks dangerous commands (`rm -rf /` & friends).
+- Works across PowerShell, zsh, bash, fish, and cmd.exe (via Clink hooks). `pip install aitermite`
+- Published and versioned on PyPI (v0.5.0 "Ask Mode") with shell hooks for automatic post-failure suggestions and pre-Enter typo detection.
+
+### 🛰️ [Bonds-eye](https://github.com/sathkruthdamera/Bonds-eye) · `Python` · `ESP32-S3` · `React Native`
+A **WiFi-sensing presence & motion system** built on a distributed mesh of ESP32-S3 nodes.
+- Streams **live presence, motion intensity, signal disturbance, node health, RSSI/CSI variance, event alerts, and a confidence score**.
+- FastAPI + Docker Compose + Nginx backend with WebSocket live streaming; React Native / Expo companion app.
+- Honest by design — practical telemetry over unverifiable vital-sign claims.
+- Three wireless sensor nodes bridge over a mobile hotspot to cloud infrastructure via UDP/TCP, with an optional local gateway for low-latency edge processing.
+
+### 🗺️ [ELEX](https://github.com/sathkruthdamera/Improving-2D-Navigation-Clarity-at-Multi-Level-Interchanges-with-ELEX) · `Python` · *Research*
+**Elevation-Aware Exploded Layout** — making tangled multi-level highway interchanges (think Dallas–Fort Worth stacks) readable on flat 2D nav displays.
+- Luminance-coded bridge height, route halos/casings, dimmed inactive roads, and **localized exploded views** that activate only at high-complexity zones.
+- Simulation in NumPy + Matplotlib scoring complexity by bridge/overlap density, elevation variance, and structure — with lookahead activation and benchmark figures.
+- Benchmarks five rendering approaches, from baseline 2D mapping to the full multi-channel ELEX treatment, with vectorized metric computation.
+- Outputs comparison figures and step-by-step pipeline diagrams; proposes future human-subjects testing on exit accuracy, decision time, route fidelity, and cognitive workload.
+
+### 📱 [Polli-nation iOS App](https://github.com/sathkruthdamera/Polli-nation-IOS-APP) · `Swift`
+A native **SwiftUI iOS app** exploring a pollinator/environment theme.
+- Built fully native in Swift / SwiftUI with a declarative, component-driven UI.
+- Focuses on clean navigation and a smooth, responsive user experience.
+- Structured for maintainability with reusable views and clear state management.
+- A hands-on dive into the Apple ecosystem and modern iOS development patterns.
+
+### 🤖 [mukkuloavis_bot](https://github.com/sathkruthdamera/mukkuloavis_bot) · `JavaScript`
+A JavaScript bot project — automation and chat experiments.
+- Event-driven JavaScript automation handling commands and user interactions.
+- Modular command structure that's easy to extend with new behaviors.
+- Experiments with conversational flows and scripted responses.
+- A playground for rapid prototyping of bot ideas and integrations.
 
 ---
 
-## 🎓 Education & Certifications
-- **M.S., Computer Science** - Wichita State University  
-- Oracle Cloud Platform Application Integration Specialist  
-- AI Foundations (Udacity) · Cloud Computing (NPTEL)
+## 🧰 Tech Stack
+
+**Languages** &nbsp;
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?logo=postgresql&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-FA7343?logo=swift&logoColor=white)
+
+**Data & Cloud** &nbsp;
+![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?logo=apachespark&logoColor=white)
+![Airflow](https://img.shields.io/badge/Airflow-017CEE?logo=apacheairflow&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonwebservices&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+**Frameworks** &nbsp;
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?logo=springboot&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black)
 
 ---
 
-## 🌱 One-liner
-> “Data doesn’t lie but sometimes it just trolls you. Double‑check.”
+## 💼 Experience
+
+### Data Engineer — SyscoFoods *(May 2024 – Present)*
+- Design and maintain production ETL/ELT pipelines that ingest and transform high-volume supply-chain and operational data into the analytics platform.
+- Build and tune Apache Spark jobs and orchestrate workflows with Airflow, improving reliability and reducing end-to-end processing times.
+- Partner with analytics and business teams to model curated, query-ready datasets and add data-quality and observability checks across pipelines.
+
+### Data Engineering & Analytics BI Consultant — First Abu Dhabi Bank *(Jun 2019 – Jan 2023)*
+- Delivered BI and analytics solutions for banking and financial reporting, translating business requirements into robust data models and dashboards.
+- Engineered ETL workflows and optimized complex SQL to consolidate data from multiple source systems into a trusted reporting layer.
+- Partnered with stakeholders to define KPIs and self-service reporting, improving data accuracy and turnaround on decision-critical insights.
+
+### Graduate Data Engineering Intern — Wichita State University *(Jan 2023 – May 2024)*
+- Supported research and academic data projects, building pipelines to collect, clean, and structure datasets for downstream analysis.
+- Developed Python- and SQL-based tooling to automate repetitive data-prep and reporting tasks.
+- Collaborated with faculty and student teams, applying data-engineering best practices while completing graduate coursework.
+
+Building data pipelines, ETL/ELT workflows, Spark jobs, and microservices across healthcare and financial domains.
 
 ---
 
+## Skill Spread
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sathkruthdamera&layout=compact&theme=tokyonight&hide_border=true" height="165" alt="top langs">
+</p>
+
+---
+
+<p align="center"><i>"Data doesn't lie — but sometimes it just trolls you. Double-check."</i></p>
+
+<p align="center">
+  📫 <a href="mailto:damerasathkruth@gmail.com">damerasathkruth@gmail.com</a>
+</p>
