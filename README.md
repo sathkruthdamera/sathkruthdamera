@@ -22,13 +22,19 @@
 
 ## 👤 Professional Summary
 
-Data Engineer with 5+ years of experience designing and operating large-scale data pipelines, ETL/ELT workflows, and analytics platforms across healthcare and financial domains. I specialize in turning messy, high-volume data into reliable, well-modeled, query-ready systems — using Apache Spark, Airflow, SQL, and cloud-native tooling on AWS. Beyond the day job, I build end-to-end side projects spanning AI developer tooling, edge/IoT sensing, computer-vision research, and mobile, where I own everything from hardware and backend to deployment and UX. I care about correctness, observability, and shipping things people actually use.
+Data Engineer with 5+ years of experience designing and operating large-scale data pipelines, ETL/ELT workflows, and analytics platforms across healthcare and financial domains. I specialize in tu[...]
 
 ---
 
 ## These are my recent adventures lately
 
 A focused sprint from **Feb → Jun 2026** — shipping across AI tooling, research, edge hardware, and mobile.
+
+### ⚡ [Tarrif_Shock-EWS](https://github.com/sathkruthdamera/Tarrif_Shock-EWS)
+An **early warning system** for tariff shocks and trade disruptions.
+- Real-time monitoring and alert generation for supply chain impacts.
+- Data-driven insights on trade policy changes and economic indicators.
+- Designed to help stakeholders anticipate and respond to tariff-related market shifts.
 
 ### 🐜 [AITERMITE](https://github.com/sathkruthdamera/AITERMITE) · `Python` · *on PyPI*
 An **AI terminal copilot** for Windows, macOS, and Linux that fixes failed commands and answers plain-English questions right at your prompt.
