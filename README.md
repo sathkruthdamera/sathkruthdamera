@@ -22,8 +22,7 @@
 
 ## 👤 Professional Summary
 
-Data Engineer with 5+ years of experience designing and operating large-scale data pipelines, ETL/ELT workflows, and analytics platforms across healthcare and financial domains. I specialize in tu[...]
-
+Data Engineer and Systems Builder specializing in AI & Edge-Sensing Tinkering. He designs robust data pipelines, ETL/ELT workflows, and analytics solutions for the healthcare and finance sectors, while actively shipping innovative side projects across AI tooling, computer vision, Data Streaming, and mobile development.
 ---
 
 ## These are my recent adventures lately
