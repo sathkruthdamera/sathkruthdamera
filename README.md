@@ -117,11 +117,7 @@ Building data pipelines, ETL/ELT workflows, Spark jobs, and microservices across
 
 ---
 
-## Skill Spread
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sathkruthdamera&layout=compact&theme=tokyonight&hide_border=true" height="165" alt="top langs">
-</p>
 
 ---
 
